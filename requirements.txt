@@ -1,0 +1,14 @@
+tpot
+NumPy
+SciPy
+scikit-learn
+DEAP
+update_checker
+tqdm
+stopit
+pandas
+joblib
+# For windows user
+pywin32
+# option
+xgboost
