@@ -4,8 +4,8 @@ from tpot import TPOTClassifier
 1) 生成机器学习 pipeline 优化器. 优化器的作用就是用来寻找最优机器学习 pipeline.
 
 参数说明：
-  generations: 执行优化处理的迭代次数．次数越多，效果越好，但是耗时也越长．
-  population_size: 每一个 generation 中的＂人口＂数．数量越大，效果越好．
+  generations: 执行优化处理的迭代次数．次数越多，效果越好，但是耗时也越长．(缺省是100)
+  population_size: 每一个 generation 中的＂人口＂数．数量越大，效果越好．(缺省是100)
   offspring_size: 子孙数量．每一个 generation 最终保留的子孙数量,也是越大越好.
     TPOT 运算消耗的时间和以上三个参数的关系是: 耗时 = POPULATION_SIZE + GENERATIONS x OFFSPRING_SIZE
   cv: 每一次迭代使用的 k-fold cross-validation 的数量.
@@ -72,4 +72,4 @@ TPOT 一旦得出算法和特征集, 即可自动生成与之对应的代码, �
 make_pipeline 方法根据自动测出的参数来生成数据集和pipeline。可以在这份输出的代码之上修改出最终的代码。
 
 """
-pipeline_optimizer.export('../output/tpot_exported_pipeline.py')
+pipeline_optimizer.export('../output/example1_pipeline.py')
